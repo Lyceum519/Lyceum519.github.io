@@ -8,39 +8,57 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
 </style>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="https://github.com/Lyceum519/MusicAnalyzer" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Git</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card-2 w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="https://github.com/Lyceum519/MusicAnalyzer" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Git</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="https://github.com/Lyceum519/MusicAnalyzer" class="w3-bar-item w3-button w3-padding-large">Git</a>
+    </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://github.com/Lyceum519/MusicAnalyzer" class="w3-bar-item w3-button w3-padding-large">Git</a>
-  </div>
-</div>
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Getting Started</h1>
+    <p class="w3-xlarge">Lyceum519</p>
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Demo</button>
+  </header>
 
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Getting Started</h1>
-  <p class="w3-xlarge">Lyceum519</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Demo</button>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Prerequite</h1>
-      <h4>jupyter</h5>
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Prerequite</h1>
+        <h4>jupyter</h5>
       <h4>python</h5>
     </div>
 
@@ -58,53 +76,63 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird">
-      <h1>Crawling data set</h1>
-      <h5 class="w3-padding-32">clone crawler repository</h5>
+      <h1>1. Crawling data set</h1>
+      <h5 class="w3-padding-16">clone crawler repository</h5>
       <div style="background-color:black;color:white;padding:20px;">
         git clone https://github.com/Lyceum519/Crawler
       </div>
 
-      <h5 class="w3-padding-32">install scrapy</h5>
+      <h5 class="w3-padding-16">install scrapy</h5>
       <div style="background-color:black;color:white;padding:20px;">
         pip install Scrapy
       </div>
 
-      <h5 class="w3-padding-32">name of spider && domain</h5>
+      <h5 class="w3-padding-16">name of spider && domain</h5>
       <img src="/drumcrawlInfo.png" style="max-width: 60%; height: auto;">
 
-      <h5 class="w3-padding-32">Run Crawler</h5>
+      <h5 class="w3-padding-16">Run Crawler</h5>
       <div style="background-color:black;color:white;padding:20px;">
       scrapy crawl drumcrawl
       </div>
-      <h5 class="w3-padding-32">Before running crawler check your path if you want save in some specific folder you should run command inside folder like /drumData</h5>
+      <h5 class="w3-padding-16">Before running crawler check your path if you want save in some specific folder you should run command inside folder like '/drumData'</h5>
+    </div>
+  </div>
 
 
+
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>2. Clone repository</h1>
+      <h5 class="w3-padding-16">cloning main python repository</h5>
+      <div style="background-color:black;color:white;padding:20px;">
+      git clone https://github.com/Lyceum519/MusicAnalyzer.git
+      </div>
+    </div>
+    <div class="w3-twothird">
+      <h1>3. Normalize data set</h1>
+      <h5 class="w3-padding-16">run jupyter. we use <a href="https://anaconda.org/" target="_blank">anaconda</a> to launch jupyter easily if you do not use anaconda just run jupyter</h5>
+      <img src="/anaconda.png" style="max-width: 60%; height: auto;">
+      <h5 class="w3-padding-16">enter to path that you clone Musicanlyzer repo and you can see '.ipynb' file in jupter folder</h5>
+      <img src="/jupyter1.png" style="max-width: 60%; height: auto;">
+      <h5 class="w3-padding-16">run compressionMp3.ipynb it will compress data set of kick wich you crawled and generate average.wav. you will use average.wav to compare at next stage.<br / > running result like this</h5>
+      <img src="/jupyter2.png" style="max-width: 60%; height: auto;">
     </div>
   </div>
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <!-- <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i> -->
-    </div>
-
     <div class="w3-twothird">
-      <h1>Normalize data set</h1>
-      <h5 class="w3-padding-32">on jupyer run compressionMp3.ipynb</h5>
-    </div>
-  </div>
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <!-- <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i> -->
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Compare your mp3</h1>
-      <h5 class="w3-padding-32">on jupyer run cmpAverage.ipynb</h5>
+      <h1>4. Compare your mp3</h1>
+      <h5 class="w3-padding-16">you can set audio_path which you want to compare</h5>
+      <div style="background-color:black;color:white;padding:20px;">audio_path = "../audio/Hip-hop-drum-beat-116-bpm.wav" <br /> audio_path2 = "../audio/compressed/average.wav"</div>
+      <h5 class="w3-padding-16">you can also change threshold if it is bigger program compare more generoulsy</h5>
+      <div style="background-color:black;color:white;padding:20px;"># threshold change depend on condtion <br /> threshold = 0.02</div>
+      <h5 class="w3-padding-16">on jupyer run cmpAverage.ipynb and result like this. it show expected point(second)s array</h5>
+      <img src="/jupyter3.png" style="max-width: 60%; height: auto;">
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">contact to Lyceum519!</h1>
+    <h1 class="w3-margin w3-xlarge">bug reporting && contribute contact to <a href="https://github.com/Lyceum519" target="_blank">Lyceum519</a> !</h1>
 </div>
 
 
@@ -120,15 +148,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Lyceum519</a></p>
+ <p>Powered by <a href="https://github.com/Lyceum519" target="_blank">Lyceum519</a></p>
 </footer>
 
 <script>
