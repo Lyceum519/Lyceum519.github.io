@@ -58,8 +58,9 @@
     <div class="w3-content">
       <div class="w3-twothird">
         <h1>Prerequite</h1>
-        <h4>jupyter</h5>
-      <h4>python</h5>
+        <h4>jupyter</h4>
+        <h4>python3</h4>
+        <h4>anaconda(option)</h4>
     </div>
 
     <div class="w3-third w3-center">
@@ -131,18 +132,62 @@
   </div>
 </div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">bug reporting && contribute contact to <a href="https://github.com/Lyceum519" target="_blank">Lyceum519</a> !</h1>
-</div>
 
 
 <!-- Third Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <h1>Server setting</h1>
+  <h3>version info</h5>
+  <h6>scala - 2.12.2</h6>
+  <h6>play framework - 2.6.3</h6>
+  <h6>jquery - 3.2.1</h6>
+  <h6>bootstrap - 4.0.0-beta</h6>
+  <h6>moment - 2.8.4</h6>
+  <h6>vis - 4.20.1</h6>
+</div>
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>1. Install sbt</h1>
+        <h5>command depends on your OS in my case Mac</h5>
+        <div style="background-color:black;color:white;padding:20px;">brew install sbt</div>
+    </div>
+  </div>
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>2. Run sbt</h1>
+      <h5>at the first running it takes time around 30~60min depends on your environment</h5>
+      <div style="background-color:black;color:white;padding:20px;">cd {yourPath}/MusicAnalyzer/server<br />run sbt</div>
+    </div>
+  </div>
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>3. Run python server</h1>
+      <h5>your python version should more than 3. we suggest 3.5 or you can run python with anaconda virtual env <br/>
+      in progress you may need some python package you can install with command 'pip install {pkagename} </h5>
+      <div style="background-color:black;color:white;padding:20px;">cd {yourPath}/MusicAnalyzer/module_suerver<br />python server.py</div>
+    </div>
+  </div>
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>4. Test localhost</h1>
+      <h5>you can test comparing mp3 on localhost enter url like this.</h5>
+      <div style="background-color:black;color:white;padding:20px;">localhost:9000</div>
+      <h5>choose mp3 what you want to compare and send request to python server. and after getting result it shows graph with y means time of drum(kick)</h5>
+      <img src="/jupyter3.png" style="max-width: 80%; height: auto;">
+    </div>
+  </div>
+</div>
+
 
 
 
 <!-- Fourth Grid -->
 
 
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">bug reporting && contribute contact to <a href="https://github.com/Lyceum519" target="_blank">Lyceum519</a> !</h1>
+</div>
 
 
 
